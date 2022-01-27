@@ -1,0 +1,20 @@
+Estrutura Heterogêneas
+
+Vetores são estruturas capazes que armazenar um conjunto de dados de um mesmo tipo
+(estrutura homogênea).
+
+Para criar estrutura que armazenam dados de tipo diversos, em C, temos que utilizar structs.
+
+Structs são estruturas definidas pelo programador que podem armazenar um conjunto de informações de tipos
+diversos (estrutura heterogênea).
+
+
+Definição de Struct
+
+struct <nome> {
+	//Dados
+};
+
+int main() {
+	struct nome Dados = {Variável};
+}

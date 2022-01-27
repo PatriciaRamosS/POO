@@ -1,0 +1,108 @@
+Acessando  informação a partir de uma variável
+
+Utilizamos o operador (.) para acessar a informação contida em uma variável do tipo da struct.
+
+typedef struct par {
+	int x;
+	int y;
+}pares;
+
+int main() {
+	pares P;//ou struct par P;
+
+	P.x = 1;
+	P.y = 2;
+
+	printf("%d %d\n", P.x, P.y);
+}
+
+Acessando informação a partir de uma posição de memória
+
+Para acessar informação a partir de uma posição de memória, utilizamos o operador (->)
+
+typedef struct par {
+	int x;
+	int y;
+}pares;
+
+int main() {
+	pares P;//ou struct par P;
+
+	(&P)->x = 1;
+	(&P)->y = 2;
+
+	printf("%d %d\n", (&P)->x, (&P)->y);
+}
+
+Acessando informação a partir de um ponteiro
+
+Como o valor de um ponteiro representa uma posição de memória, também utilizamos o operador (->)
+para acessar as informações utilizando um ponteiro. 
+
+#include <stdio.h>
+
+typedef struct par {
+	int x;
+	int y;
+}pares;
+
+int main() {
+	pares P;//ou struct par P;
+	pares *ponteiro = &P;
+	ponteiro->x = 1;
+	ponteiro->y = 2;
+	
+	printf("%d %d\n", ponteiro->x, ponteiro->y);
+}
+
+
+Vetor dinâmico de struct
+
+Temos que tomar muito cuidado ao acessar um vetor, dinâmico de structs,
+pois uma variável  utiliza (.), porém uma posição utiliza (->)
+
+#include <stdio.h>
+#include <malloc.h>
+#include <stdlib.h>
+
+typedef struct par {
+	int x;
+	int y;
+}pares;
+
+int main() {
+	pares *p = (pares*)malloc(sizeof(pares)*2); //alocando espaço na memória
+	p->x = 1; //tem que utilizar o operador -> para acessar o x, pois p é uma posição da memória
+
+	p[0].y = 2; //porém quando se utiliza o operador [], esse operador vai retornar a váriavel que está
+				//naquela posição de memória, logo, têm-se que utilizar o operador (.)
+
+	(p+1)->x = 3; 
+	p[1].y = 4;
+
+	printf("%d %d\n", p[0].x, p[0].y);
+	printf("%d %d\n", (&p[1])->x, (p+1)->y);
+}
+
+
+
+/******** PRATICANDO 
+
+#include <stdio.h>
+#include <malloc.h>
+#include <stdlib.h>
+
+typedef struct par {
+	int x;
+	int y;
+}pares;
+
+int main() {
+	pares x;
+	pares *p = &x; // caso seja utilizado o & está demonstrando que está acessando a partir de uma posição de memória
+				   // logo o operador que deve ser utilizado é o ->
+	p->x = 1; //linha 15: o p está acessando o x da posição de memória p no qual 
+			  //a linha 13: informa que a posição de memória p é a posição de memória da variável x
+
+	printf("%d %d\n", x.x, x.y);
+}

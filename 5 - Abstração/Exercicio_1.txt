@@ -1,0 +1,15 @@
+Exemplo 
+
+Imagine que queremos fazer um programa que receba dados de três pessoas e quer saber
+o nome da pessoa mais velha.
+
+Caso ocorra empate, imprima o nome de todas as pessoas mais velhas. 
+
+
+Abstração do exemplo
+
+1. Implementar uma classe pessoa.
+2. Criar três objetos da classe pessoa.
+3. Ler dados das pessoas.
+4. Descobrir a maior idade entre as pessoas.
+5. Imprimir o nome de todas as pessoas com a maior idade do grupo.

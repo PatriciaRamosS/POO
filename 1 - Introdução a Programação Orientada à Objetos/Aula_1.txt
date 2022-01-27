@@ -1,0 +1,93 @@
+Paradigmas: São modelos funcionais a serem seguidos.
+Paradigmas de programação: Modelos de programação a serem seguidos.
+
+
+Programação Imperativa: Modela um programa por uma sequência de comandos que o computador deve executar.
+
+Programação Orientada a Objetos: Modela um programa baseado na interação entre objetos. 
+Exemplos: Linguagem Java, C++ e python.
+
+
+O que é um Objeto e uma Classe?
+
+Um Objeto é uma entidade.
+Normalmente referenciado como sendo uma instância de uma Classe.
+
+Uma Classe contém a descrição de característica existentes nos Objetos dessa Classe.
+Normalmente referenciada como sendo um modelo para objetos.
+
+A palavra pessoa carrega várias característica intrínsecas, ou seja, pessoa representa uma Classe.
+Representa várias características que cada indivíduo pertencente a essa Classe deve possuir.
+
+Características individuais: 
+1. Idade
+2. Altura
+3. Cor da pele
+4. Sexo
+5. Nome
+etc
+
+Já cada Pessoa que pertence a essa Classe são os objetos. 
+
+Logo, Pessoa é a Classe, e cada exemplo da Classe Pessoa são os Objetos.
+
+Objetos -> Indivíduo
+Classe -> Modelo
+
+
+O que são atributos e métodos? 
+
+Uma classe pode determinar quais atributos e métodos que os objetos devem possuir.
+
+Atributos: São características individuais de cada Objetos. Por exemplo, considerando a Classe Humano: Peso, 
+Altura, Nome, Idade e Sexo.
+
+Métodos: São ações que todo objeto da Classe pode realizar. 
+Por exemplo, considerando a Classe Humano: Falar, Dormir, Comer e Acordar.
+
+
+O Paradigma de Orientação a Objetos utiliza como base, 4 pilares:
+
+1. Abstração
+2. Encapsulamento
+3. Herança
+4. Polimorfismo
+
+
+
+
+
+1. Abstração
+
+Abstração, significa que o programador deve abstrair as informação irrelevantes ao problema e implementar
+apenas o essencial para aplicação. Abstrair características irrelevantes.
+
+
+2. Encapsulamento
+
+Encapsular, significa colocar em uma capsula. 
+Em outras palavras, esconder informações.
+
+Em OO, encapsular, significa restringir o acesso de determinadas características de objetos de uma classe, 
+para aumentar a segurança de uma aplicação e, ao mesmo tempo, tornar o uso mais intuitivo. 
+
+
+3. Herança
+
+A herança permite que classes herdem informações de outras.
+Esse mecanismo torna o código mais intuitivo e reduz a repetição de código.
+
+
+4. Polimorfismo
+
+Polimorfismo significa "várias formas".
+
+No mundo real, uma mesma ação pode ser executada de várias formas dependendo do usuário e da situação
+que a ação foi executada.
+
+Significa que um mesmo Método com o mesmo nome pode estar sendo utilizado para realizar ações diferentes, 
+dependendo da situação em que ele foi implementado.
+
+Em relação ao polimorfismo, o principal conceito é a propriedade de duas ou mais classes derivadas de uma
+mesma superclasse responderem a mesma mensagem, cada uma de uma forma diferente. Ocorre quando uma subclasse
+redefine um método existente na superclasse, ou seja, quando temos os métodos sobrescritos (overriding).

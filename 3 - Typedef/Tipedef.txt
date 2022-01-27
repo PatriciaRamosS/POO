@@ -1,0 +1,35 @@
+Para tornar uma codificação mais legível, é possível que o programador defina sinônimos aos tipos de dados
+utilizando o typedef.
+
+typedef <nome> <sinônimo>;
+
+Por exemplo, podemos atribuir o sinônimo "inteiro" para o tipo "int".
+
+typedef int inteiro;
+
+inteiro x;
+
+
+Atribuindo sinônimo aos tipos
+
+struct livro{
+	char nome[50];
+	int preco;
+};
+
+typedef struct livro livros;
+
+int main() {
+	livros x;
+}
+
+OU
+
+typedef struct livro{
+	char nome[50];
+	int preco;
+}livros;
+
+int main() {
+	livros x;
+}
